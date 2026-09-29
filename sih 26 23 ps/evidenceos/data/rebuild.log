@@ -1,0 +1,83 @@
+[04] DOC-0001 registered: Monthly Coal Statistics March 2025 (Provisional) (23 pages, scanned=False)
+      done in 42.4s: {'pages': 23, 'regions': 465, 'tables': 28, 'facts': 1394, 'scanned_pages': 0, 'narrative_facts': 4, 'cross_document': {'groups': 0, 'corroborated': 0, 'conflicts': 0}, 'seconds': 42.4}
+[05] DOC-0002 registered: Monthly Coal Statistics May 2025 (Provisional) (28 pages, scanned=False)
+      done in 40.4s: {'pages': 28, 'regions': 298, 'tables': 28, 'facts': 1281, 'scanned_pages': 3, 'narrative_facts': 6, 'cross_document': {'groups': 176, 'corroborated': 176, 'conflicts': 0}, 'seconds': 40.4}
+[06] DOC-0003 registered: Ministry of Coal Annual Report 2024-25 — Chapter 10 (9 pages, scanned=False)
+      done in 21.5s: {'pages': 9, 'regions': 70, 'tables': 7, 'facts': 63, 'scanned_pages': 0, 'narrative_facts': 0, 'cross_document': {'groups': 22, 'corroborated': 22, 'conflicts': 0}, 'seconds': 21.5}
+[07] DOC-0004 registered: Ministry of Coal Annual Report 2024-25 — Chapter 14 Safety in Coal Mines (37 pages, scanned=False)
+      done in 93.3s: {'pages': 37, 'regions': 398, 'tables': 14, 'facts': 384, 'scanned_pages': 0, 'narrative_facts': 0, 'cross_document': {'groups': 176, 'corroborated': 176, 'conflicts': 0}, 'seconds': 93.3}
+[08] DOC-0005 registered: Ministry of Coal Annual Report 2024-25 — Chapter 20 Information Technology (11 pages, scanned=False)
+      done in 31.5s: {'pages': 11, 'regions': 81, 'tables': 0, 'facts': 0, 'scanned_pages': 0, 'narrative_facts': 0, 'cross_document': {}, 'seconds': 31.5}
+[13] DOC-0006 registered: Ministry of Coal Annual Report 2024-25 — Chapter 2 The Year at a Glance (13 pages, scanned=False)
+      done in 17.1s: {'pages': 13, 'regions': 105, 'tables': 13, 'facts': 241, 'scanned_pages': 0, 'narrative_facts': 2, 'cross_document': {'groups': 29, 'corroborated': 28, 'conflicts': 1}, 'seconds': 17.1}
+[14] DOC-0007 registered: Ministry of Coal Annual Report 2024-25 — Chapter 3 Production and Supplies (24 pages, scanned=False)
+      done in 84.8s: {'pages': 24, 'regions': 204, 'tables': 6, 'facts': 0, 'scanned_pages': 0, 'narrative_facts': 0, 'cross_document': {}, 'seconds': 84.8}
+[15] DOC-0008 registered: Ministry of Coal Annual Report 2025-26 — Chapter 2 The Year at a Glance (14 pages, scanned=False)
+      done in 20.5s: {'pages': 14, 'regions': 95, 'tables': 11, 'facts': 245, 'scanned_pages': 1, 'narrative_facts': 3, 'cross_document': {'groups': 50, 'corroborated': 38, 'conflicts': 12}, 'seconds': 20.5}
+[01] DOC-0009 registered: Coal Directory of India 2024-25 (266 pages, scanned=True)
+      done in 439.1s: {'pages': 84, 'regions': 761, 'tables': 80, 'facts': 4184, 'scanned_pages': 7, 'narrative_facts': 0, 'cross_document': {'groups': 401, 'corroborated': 359, 'conflicts': 42}, 'seconds': 439.0}
+[11] DOC-0010 registered: CIL Promotion Orders B-70 to B-83 (E1→E2, E2→E3, E3→E4) (21 pages, scanned=True)
+      done in 249.2s: {'pages': 21, 'regions': 288, 'tables': 14, 'facts': 0, 'scanned_pages': 21, 'narrative_facts': 0, 'cross_document': {}, 'seconds': 249.2}
+[12] DOC-0011 registered: CIL PR Agency Contract (Concept Communication) (160 pages, scanned=True)
+      done in 93.0s: {'pages': 12, 'regions': 146, 'tables': 1, 'facts': 0, 'scanned_pages': 12, 'narrative_facts': 0, 'cross_document': {}, 'seconds': 93.0}
+OPEN CONFLICTS: 44
+CF-001 minor    | Coal India Limited | dispatch | FY2023-24 | [('753.34', 'DOC-0001', 3, 'provisional'), ('753.54', 'DOC-0006', 7, 'actual'), ('753.54', 'DOC-0008', 6, 'actual')]
+CF-002 minor    | Captive and Others | production | FY2024-25 | [('197.46', 'DOC-0008', 5, 'actual'), ('197.6', 'DOC-0001', 1, 'provisional')]
+CF-003 minor    | Captive and Others | dispatch | FY2023-24 | [('149.62', 'DOC-0008', 6, 'actual'), ('149.81', 'DOC-0006', 6, 'actual')]
+CF-004 minor    | Singareni Collieries Company Limited | dispatch | FY2024-25 | [('65.26', 'DOC-0008', 6, 'actual'), ('65.264', 'DOC-0009', 107, 'actual'), ('65.27', 'DOC-0001', 3, 'provisional')]
+CF-005 minor    | Singareni Collieries Company Limited | dispatch | FY2024-25:ytd:2024-12 | [('46.18', 'DOC-0008', 8, 'actual'), ('46.19', 'DOC-0006', 7, 'actual')]
+CF-006 major    | Singareni Collieries Company Limited | dispatch @Others (sector) | FY2024-25:ytd:2024-12 | [('1.38', 'DOC-0008', 8, 'actual'), ('1.39', 'DOC-0006', 8, 'actual')]
+CF-007 critical | India | production | FY2024-25 | [('893.191', 'DOC-0009', 101, 'actual'), ('1047.52', 'DOC-0008', 5, 'actual'), ('1047.68', 'DOC-0001', 1, 'provisional')]
+CF-008 minor    | India | dispatch | FY2024-25 | [('1025.33', 'DOC-0008', 6, 'actual'), ('1025.33', 'DOC-0009', 107, 'actual'), ('1025.36', 'DOC-0001', 4, 'provisional')]
+CF-009 minor    | Coal India Limited | production | FY2024-25 | [('781.056', 'DOC-0009', 86, 'actual'), ('781.06', 'DOC-0008', 5, 'actual'), ('781.08', 'DOC-0001', 1, 'provisional')]
+CF-010 minor    | Coal India Limited | dispatch | FY2024-25 | [('762.83', 'DOC-0008', 6, 'actual'), ('762.981', 'DOC-0009', 107, 'actual'), ('763.06', 'DOC-0001', 3, 'provisional')]
+CF-011 minor    | Coal India Limited | dispatch | FY2024-25:ytd:2024-12 | [('560.63', 'DOC-0006', 7, 'actual'), ('561.68', 'DOC-0008', 7, 'actual')]
+CF-012 major    | Coal India Limited | dispatch @Others (sector) | FY2024-25:ytd:2024-12 | [('51.99', 'DOC-0006', 7, 'provisional'), ('53.04', 'DOC-0008', 7, 'actual')]
+CF-013 minor    | Central Coalfields Limited | production | FY2023-24 | [('86.054', 'DOC-0009', 86, 'actual'), ('86.06', 'DOC-0001', 1, 'provisional')]
+CF-014 minor    | Central Coalfields Limited | dispatch | FY2024-25 | [('85.687', 'DOC-0009', 107, 'actual'), ('85.81', 'DOC-0001', 3, 'provisional')]
+CF-015 major    | Barmer Lignite Mining Company | lignite_production | FY2024-25 | [('5.921', 'DOC-0009', 72, 'actual'), ('5.98', 'DOC-0001', 5, 'provisional')]
+CF-016 minor    | Mahanadi Coalfields Limited | production | FY2023-24 | [('206.09', 'DOC-0001', 1, 'provisional'), ('206.099', 'DOC-0009', 86, 'actual')]
+CF-017 minor    | Mahanadi Coalfields Limited | dispatch | FY2024-25 | [('211.97', 'DOC-0001', 3, 'provisional'), ('212.022', 'DOC-0009', 107, 'actual')]
+CF-018 critical | Sikkim | resources_measured | asof:2025-04-01 | [('0', 'DOC-0008', 4, 'actual'), ('40', 'DOC-0009', 44, 'actual')]
+CF-019 critical | Assam | resources_measured | asof:2024-04-01 | [('31', 'DOC-0009', 44, 'actual'), ('464.78', 'DOC-0006', 4, 'actual')]
+CF-020 critical | Assam | resources_indicated | asof:2024-04-01 | [('40', 'DOC-0009', 44, 'actual'), ('57.21', 'DOC-0006', 4, 'actual')]
+CF-021 critical | Assam | resources_inferred | asof:2024-04-01 | [('3.02', 'DOC-0006', 4, 'actual'), ('19', 'DOC-0009', 44, 'actual')]
+CF-022 critical | Assam | resources_total | asof:2024-04-01 | [('90', 'DOC-0009', 44, 'actual'), ('525.01', 'DOC-0006', 4, 'actual')]
+CF-023 critical | Assam | resources_measured | asof:2025-04-01 | [('31', 'DOC-0009', 44, 'actual'), ('464.78', 'DOC-0008', 4, 'actual')]
+CF-024 critical | Assam | resources_indicated | asof:2025-04-01 | [('40', 'DOC-0009', 44, 'actual'), ('57.21', 'DOC-0008', 4, 'actual')]
+CF-025 critical | Assam | resources_inferred | asof:2025-04-01 | [('3.02', 'DOC-0008', 4, 'actual'), ('19', 'DOC-0009', 44, 'actual')]
+CF-026 critical | Assam | resources_total | asof:2025-04-01 | [('90', 'DOC-0009', 44, 'actual'), ('525.01', 'DOC-0008', 4, 'actual')]
+CF-027 critical | Chhattisgarh | resources_measured | asof:2024-04-01 | [('40078.1', 'DOC-0006', 4, 'actual'), ('212207', 'DOC-0009', 44, 'actual')]
+CF-028 critical | Chhattisgarh | resources_indicated | asof:2024-04-01 | [('41092.8', 'DOC-0006', 4, 'actual'), ('148717', 'DOC-0009', 44, 'actual')]
+CF-029 critical | Chhattisgarh | resources_inferred | asof:2024-04-01 | [('1495.44', 'DOC-0006', 4, 'actual'), ('28498', 'DOC-0009', 44, 'actual')]
+CF-030 critical | Chhattisgarh | resources_total | asof:2024-04-01 | [('82666.4', 'DOC-0006', 4, 'actual'), ('389421', 'DOC-0009', 44, 'actual')]
+CF-031 critical | Chhattisgarh | resources_measured | asof:2025-04-01 | [('45462.7', 'DOC-0008', 4, 'actual'), ('220412', 'DOC-0009', 44, 'actual')]
+CF-032 critical | Chhattisgarh | resources_indicated | asof:2025-04-01 | [('38340.2', 'DOC-0008', 4, 'actual'), ('149065', 'DOC-0009', 44, 'actual')]
+CF-033 critical | Chhattisgarh | resources_inferred | asof:2025-04-01 | [('1460.35', 'DOC-0008', 4, 'actual'), ('31255', 'DOC-0009', 44, 'actual')]
+CF-034 critical | Chhattisgarh | resources_total | asof:2025-04-01 | [('85263.2', 'DOC-0008', 4, 'actual'), ('400715', 'DOC-0009', 44, 'actual')]
+CF-035 critical | Bharat Coking Coal Limited | coking_production | FY2024-25 | [('18.233', 'DOC-0009', 91, 'actual'), ('38.89', 'DOC-0001', 2, 'provisional')]
+CF-036 minor    | India | production | 2025-03 | [('118.52', 'DOC-0009', 81, 'actual'), ('118.54', 'DOC-0001', 1, 'provisional')]
+CF-037 minor    | India | coking_production | FY2024-25 | [('66.47', 'DOC-0009', 34, 'actual'), ('66.49', 'DOC-0001', 2, 'provisional')]
+CF-038 minor    | India | lignite_production | FY2024-25 | [('45.133', 'DOC-0009', 78, 'actual'), ('45.29', 'DOC-0001', 5, 'provisional')]
+CF-039 minor    | India | lignite_dispatch | FY2024-25 | [('44.24', 'DOC-0001', 6, 'provisional'), ('44.437', 'DOC-0009', 108, 'actual')]
+CF-040 minor    | India | production | 2024-05 | [('83.96', 'DOC-0002', 1, 'actual'), ('83.968', 'DOC-0009', 81, 'actual')]
+CF-041 minor    | NLC India Limited | lignite_production | FY2024-25 | [('24.06', 'DOC-0009', 72, 'actual'), ('24.16', 'DOC-0001', 5, 'provisional')]
+CF-042 minor    | Eastern Coalfields Limited | dispatch | FY2024-25 | [('49.75', 'DOC-0001', 3, 'provisional'), ('49.756', 'DOC-0009', 107, 'actual')]
+CF-043 minor    | Coal India Limited | production | 2025-03 | [('85.783', 'DOC-0009', 81, 'actual'), ('85.81', 'DOC-0001', 1, 'provisional')]
+CF-044 minor    | Coal India Limited | production | FY2023-24 | [('773.65', 'DOC-0001', 1, 'provisional'), ('773.65', 'DOC-0006', 5, 'actual'), ('773.7', 'DOC-0008', 5, 'actual'), ('773.806', 'DOC-0009', 86, 'actual')]
+
+facts: 7792 tables: 202 entities: 205 chunks: 29554
+ review_status none 7588
+ review_status recommended 204
+ validation V-001 fail 8
+ validation V-001 pass 7775
+ validation V-001 warning 9
+ validation V-003 fail 39
+ validation V-003 pass 340
+ validation V-003 warning 53
+ validation V-004 pass 7752
+ validation V-004 warning 40
+ validation V-006 fail 185
+ validation V-006 pass 800
+ validation V-007 pass 7714
+ validation V-007 warning 78

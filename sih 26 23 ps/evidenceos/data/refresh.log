@@ -1,0 +1,53 @@
+[04] DOC-0001 already present (validated): Monthly Coal Statistics March 2025 (Provisional) (23 pages, scanned=False)
+      done in 24.7s: {'pages': 23, 'regions': 465, 'tables': 28, 'facts': 1397, 'scanned_pages': 0, 'narrative_facts': 7, 'cross_document': {'groups': 276, 'corroborated': 248, 'conflicts': 28}, 'seconds': 24.7}
+[05] DOC-0002 already present (validated): Monthly Coal Statistics May 2025 (Provisional) (28 pages, scanned=False)
+      done in 30.5s: {'pages': 28, 'regions': 298, 'tables': 28, 'facts': 1253, 'scanned_pages': 3, 'narrative_facts': 9, 'cross_document': {'groups': 276, 'corroborated': 248, 'conflicts': 28}, 'seconds': 30.5}
+[01] DOC-0009 already present (validated): Coal Directory of India 2024-25 (266 pages, scanned=True)
+      done in 132.2s: {'pages': 84, 'regions': 761, 'tables': 80, 'facts': 4134, 'scanned_pages': 7, 'narrative_facts': 0, 'cross_document': {'groups': 337, 'corroborated': 311, 'conflicts': 26}, 'seconds': 132.2}
+OPEN CONFLICTS: 28
+CF-083 minor    | Captive and Others | dispatch | FY2023-24 | [('149.62', 'DOC-0008', 6, 'actual'), ('149.81', 'DOC-0006', 6, 'actual')]
+CF-094 minor    | Singareni Collieries Company Limited | dispatch | FY2024-25:ytd:2024-12 | [('46.18', 'DOC-0008', 8, 'actual'), ('46.19', 'DOC-0006', 7, 'actual')]
+CF-095 major    | Singareni Collieries Company Limited | dispatch @Others (sector) | FY2024-25:ytd:2024-12 | [('1.38', 'DOC-0008', 8, 'actual'), ('1.39', 'DOC-0006', 8, 'actual')]
+CF-102 minor    | Coal India Limited | dispatch | FY2024-25:ytd:2024-12 | [('560.63', 'DOC-0006', 7, 'actual'), ('561.68', 'DOC-0008', 7, 'actual')]
+CF-103 major    | Coal India Limited | dispatch @Others (sector) | FY2024-25:ytd:2024-12 | [('51.99', 'DOC-0006', 7, 'provisional'), ('53.04', 'DOC-0008', 7, 'actual')]
+CF-158 minor    | Captive and Others | production | FY2024-25 | [('197.46', 'DOC-0008', 5, 'actual'), ('197.6', 'DOC-0001', 1, 'provisional')]
+CF-171 minor    | Coal India Limited | dispatch | FY2023-24 | [('753.34', 'DOC-0001', 3, 'provisional'), ('753.54', 'DOC-0006', 7, 'actual'), ('753.54', 'DOC-0008', 6, 'actual')]
+CF-176 minor    | South Eastern Coalfields Limited | dispatch | FY2024-25 | [('170.744', 'DOC-0009', 107, 'actual'), ('170.75', 'DOC-0001', 3, 'provisional')]
+CF-177 minor    | Central Coalfields Limited | production | FY2023-24 | [('86.054', 'DOC-0009', 86, 'actual'), ('86.06', 'DOC-0001', 1, 'provisional')]
+CF-178 minor    | Central Coalfields Limited | dispatch | FY2024-25 | [('85.687', 'DOC-0009', 107, 'actual'), ('85.81', 'DOC-0001', 3, 'provisional')]
+CF-179 major    | Barmer Lignite Mining Company | lignite_production | FY2024-25 | [('5.921', 'DOC-0009', 72, 'actual'), ('5.98', 'DOC-0001', 5, 'provisional')]
+CF-180 minor    | Mahanadi Coalfields Limited | production | FY2023-24 | [('206.09', 'DOC-0001', 1, 'provisional'), ('206.099', 'DOC-0009', 86, 'actual')]
+CF-181 minor    | Mahanadi Coalfields Limited | dispatch | FY2024-25 | [('211.97', 'DOC-0001', 3, 'provisional'), ('212.022', 'DOC-0009', 107, 'actual')]
+CF-182 minor    | Singareni Collieries Company Limited | dispatch | FY2024-25 | [('65.26', 'DOC-0008', 6, 'actual'), ('65.264', 'DOC-0009', 107, 'actual'), ('65.27', 'DOC-0001', 3, 'provisional')]
+CF-183 minor    | India | resources_indicated | asof:2025-04-01 | [('149048', 'DOC-0008', 4, 'actual'), ('149065', 'DOC-0009', 44, 'actual')]
+CF-184 minor    | India | production | FY2024-25 | [('1047.52', 'DOC-0008', 5, 'actual'), ('1047.52', 'DOC-0009', 71, 'actual'), ('1047.68', 'DOC-0001', 1, 'provisional')]
+CF-185 minor    | India | dispatch | FY2024-25 | [('1025.33', 'DOC-0008', 6, 'actual'), ('1025.33', 'DOC-0009', 107, 'actual'), ('1025.36', 'DOC-0001', 4, 'provisional')]
+CF-186 minor    | India | production | 2025-03 | [('118.52', 'DOC-0009', 81, 'actual'), ('118.54', 'DOC-0001', 1, 'provisional')]
+CF-187 minor    | India | coking_production | FY2024-25 | [('66.47', 'DOC-0009', 78, 'actual'), ('66.49', 'DOC-0001', 2, 'provisional')]
+CF-188 minor    | India | lignite_production | FY2024-25 | [('45.133', 'DOC-0009', 78, 'actual'), ('45.29', 'DOC-0001', 5, 'provisional')]
+CF-189 minor    | India | lignite_dispatch | FY2024-25 | [('44.24', 'DOC-0001', 6, 'provisional'), ('44.437', 'DOC-0009', 108, 'actual')]
+CF-190 minor    | India | production | 2024-05 | [('83.96', 'DOC-0002', 1, 'actual'), ('83.968', 'DOC-0009', 81, 'actual')]
+CF-191 minor    | NLC India Limited | lignite_production | FY2024-25 | [('24.06', 'DOC-0009', 72, 'actual'), ('24.16', 'DOC-0001', 5, 'provisional')]
+CF-192 minor    | Eastern Coalfields Limited | dispatch | FY2024-25 | [('49.618', 'DOC-0009', 107, 'actual'), ('49.75', 'DOC-0001', 3, 'provisional')]
+CF-193 minor    | Coal India Limited | production | FY2023-24 | [('773.65', 'DOC-0006', 5, 'actual'), ('773.65', 'DOC-0001', 1, 'provisional'), ('773.7', 'DOC-0008', 5, 'actual'), ('773.806', 'DOC-0009', 86, 'actual')]
+CF-194 minor    | Coal India Limited | production | FY2024-25 | [('781.056', 'DOC-0009', 86, 'actual'), ('781.06', 'DOC-0008', 5, 'actual'), ('781.08', 'DOC-0001', 1, 'provisional')]
+CF-195 minor    | Coal India Limited | dispatch | FY2024-25 | [('762.83', 'DOC-0008', 6, 'actual'), ('762.832', 'DOC-0009', 107, 'actual'), ('763.06', 'DOC-0001', 3, 'provisional')]
+CF-196 minor    | Coal India Limited | production | 2025-03 | [('85.783', 'DOC-0009', 81, 'actual'), ('85.81', 'DOC-0001', 1, 'provisional')]
+
+facts: 7717 tables: 202 entities: 205 chunks: 8535
+ review_status none 7537
+ review_status recommended 180
+ validation V-001 fail 8
+ validation V-001 pass 7700
+ validation V-001 warning 9
+ validation V-003 fail 39
+ validation V-003 pass 340
+ validation V-003 warning 54
+ validation V-004 pass 7677
+ validation V-004 warning 40
+ validation V-006 fail 105
+ validation V-006 pass 689
+ validation V-007 pass 7648
+ validation V-007 warning 69
+documents re-pointed to data/originals: 0
+db size MB: 40.9

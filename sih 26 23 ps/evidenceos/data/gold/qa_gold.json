@@ -1,0 +1,33 @@
+{
+  "_comment": "Gold Q&A for EvidenceOS evaluation. Every expected value was read manually from the source PDF page named in `evidence`. Values in MT unless stated. `accept` lists all numbers that are acceptable in the answer (e.g. provisional vs final figures published by two documents).",
+  "items": [
+    {"id": "q01", "question": "What was India's coal production in FY 2024-25?", "expect_route": "numeric", "accept": [1047.68, 1047.52], "must_cite_doc": ["04", "15"], "expect_conflict": true,
+     "evidence": "#04 p1 Grand Total upto Mar FY25 = 1047.68 (provisional); #15 p5 Total 2024-25 Actual = 1047.52"},
+    {"id": "q02", "question": "How much coal did CIL produce in FY 2024-25?", "expect_route": "numeric", "accept": [781.08, 781.06], "must_cite_doc": ["04"], "evidence": "#04 p1 CIL 781.08; #15 p5 CIL 781.06"},
+    {"id": "q03", "question": "What was SCCL's coal production in 2024-25?", "expect_route": "numeric", "accept": [69.01], "evidence": "#04 p1 and #15 p5 both 69.01 (corroborated)"},
+    {"id": "q04", "question": "What was the coal production of ECL in March 2025?", "expect_route": "numeric", "accept": [7.07], "evidence": "#04 p1 ECL Production during Mar FY25 = 7.07"},
+    {"id": "q05", "question": "What was MCL's production in FY 2023-24?", "expect_route": "numeric", "accept": [206.09], "evidence": "#04 p1 MCL upto Mar FY24 = 206.09"},
+    {"id": "q06", "question": "How much coal was produced by Gevra mine in 2024-25?", "expect_route": "numeric", "accept": [56.03], "evidence": "#04 p11 GEVRA Prod. upto Mar'25 = 56.03"},
+    {"id": "q07", "question": "What was the production of Kusmunda in FY 2024-25?", "expect_route": "numeric", "accept": [28.43], "evidence": "#04 p11 KUSMUNDA 28.43"},
+    {"id": "q08", "question": "What was the total coal dispatch in India in FY 2024-25?", "expect_route": "numeric", "accept": [1025.36, 1025.33], "expect_conflict": true, "evidence": "#04 p4 Total 1025.36; #15 p6 Total 1025.33"},
+    {"id": "q09", "question": "What was the coal dispatch to the power sector during March 2025?", "expect_route": "numeric", "accept": [78.46], "evidence": "#04 p4 Power despatch during Mar FY25 = 78.46"},
+    {"id": "q10", "question": "How much coal was dispatched to the cement sector in FY 2024-25?", "expect_route": "numeric", "accept": [7.75], "evidence": "#04 p4 Cement upto Mar FY25 = 7.75"},
+    {"id": "q11", "question": "What was CIL's dispatch in 2024-25 upto December?", "expect_route": "numeric", "accept": [560.63, 561.68], "expect_conflict": true, "evidence": "#13 p6/7 560.63 (AR 2024-25); #15 p7 561.68 (AR 2025-26)"},
+    {"id": "q12", "question": "What are the total coal resources of Jharkhand as on 1.4.2024?", "expect_route": "numeric", "accept": [91811.57], "evidence": "#13 p4 JHARKHAND Resource = 91811.57"},
+    {"id": "q13", "question": "What were the total coal resources of India as on 1 April 2025?", "expect_route": "numeric", "accept": [400716.05, 400716.0, 400.72], "evidence": "#15 p4 Total resources as on 01.04.2025 (web check: 400.72 bn t)"},
+    {"id": "q14", "question": "What were the measured coal resources of Odisha as on 01.04.2024?", "expect_route": "numeric", "accept": [53799.43], "evidence": "#13 p4 ODISHA Measured (331) = 53799.43"},
+    {"id": "q15", "question": "What were the total lignite resources of Tamil Nadu as on 1.4.2025?", "expect_route": "numeric", "accept": [37523.65], "evidence": "#15 p5 Tamilnadu Resource = 37523.65"},
+    {"id": "q16", "question": "What is the lignite production of NLC India in 2025-26 upto December?", "expect_route": "numeric", "accept": [14.45], "evidence": "#15 p9 NLC = 14.45"},
+    {"id": "q17", "question": "What was India's lignite production in FY 2024-25?", "expect_route": "numeric", "accept": [45.29], "evidence": "#04 p5 lignite Grand Total upto Mar FY25 = 45.29"},
+    {"id": "q18", "question": "Compare CIL coal production in FY 2023-24 and FY 2024-25", "expect_route": "comparison", "accept": [773.65, 773.7, 781.08, 781.06], "min_values": 2, "evidence": "#04 p1 / #15 p5"},
+    {"id": "q19", "question": "SECL vs MCL production in March 2025", "expect_route": "comparison", "accept": [20.93, 22.15], "min_values": 2, "evidence": "#04 p1"},
+    {"id": "q20", "question": "Which documents disagree on India's dispatch figures?", "expect_route": "conflict", "accept": [1025.36, 1025.33], "expect_conflict": true, "evidence": "conflict register"},
+    {"id": "q21", "question": "What was the coal production target of CIL for 2024-25?", "expect_route": "numeric", "accept": [838, 838.0], "evidence": "#15 p5 CIL 2024-25 Annual Target = 838"},
+    {"id": "q22", "question": "What was the overburden removal of Rajmahal in FY 2024-25?", "expect_route": "numeric", "accept": [36.06], "evidence": "#04 p12 Rajmahal OBR upto Mar'25 = 36.06 M.Cum"},
+    {"id": "q23", "question": "What was India's coal production in May 2025?", "expect_route": "numeric", "accept": [86.34], "evidence": "#05 p1 Grand Total during May FY26 = 86.34"},
+    {"id": "q24", "question": "How much coal did CIL produce in FY 2025-26 upto May?", "expect_route": "numeric", "accept": [125.55], "evidence": "#05 p1 CIL upto May FY26 = 125.55"},
+    {"id": "q25", "question": "What was the coal production of BCCL in FY 2022-23?", "expect_route": "numeric", "accept": [36.179, 36.18], "evidence": "#01 (Coal Directory) p86 Table 3.11 BCCL 2022-23 Total = 36.179"},
+    {"id": "q26", "question": "What was the coal production of Bharat Coking Coal Limited in 1991-92?", "expect_route": "abstain", "accept": [], "evidence": "not in corpus → system must abstain or flag partial evidence"},
+    {"id": "q27", "question": "What is the iron ore production of NMDC in 2024-25?", "expect_route": "abstain", "accept": [], "evidence": "out of domain → abstain"}
+  ]
+}
