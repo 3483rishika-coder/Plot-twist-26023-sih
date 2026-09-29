@@ -1,0 +1,98 @@
+[
+  {
+    "id": "01",
+    "title": "Coal Directory of India 2024-25",
+    "publisher": "Ministry of Coal",
+    "format": "PDF",
+    "source_url": "https://coal.gov.in/sites/default/files/2024-03/28-11-2025a-stc.pdf",
+    "dataset_role": "Large statistical directory; multi-column tables, long historical series."
+  },
+  {
+    "id": "02",
+    "title": "Coal Directory of India 2023-24",
+    "publisher": "Ministry of Coal",
+    "format": "PDF",
+    "source_url": "https://coal.gov.in/sites/default/files/2024-03/28-10-2024adir.pdf",
+    "dataset_role": "Large statistical directory; useful for cross-year consistency checks."
+  },
+  {
+    "id": "03",
+    "title": "Coal Directory of India 2022-23",
+    "publisher": "Ministry of Coal",
+    "format": "PDF",
+    "source_url": "https://coal.gov.in/sites/default/files/2024-03/07-03-2024cd-wn.pdf",
+    "dataset_role": "Older statistical directory; useful for historical-document testing."
+  },
+  {
+    "id": "04",
+    "title": "Monthly Coal Statistics — March 2025",
+    "publisher": "Ministry of Coal",
+    "format": "PDF",
+    "source_url": "https://coal.gov.in/sites/default/files/2025-04/msg-march25.pdf",
+    "dataset_role": "Tables + charts + subsidiary/mining data; includes CIL mine-level production tables."
+  },
+  {
+    "id": "05",
+    "title": "Monthly Coal Statistics — May 2025",
+    "publisher": "Ministry of Coal",
+    "format": "PDF",
+    "source_url": "https://coal.gov.in/sites/default/files/2025-06/msg-may25.pdf",
+    "dataset_role": "Monthly statistics with tables/charts and operational metrics."
+  },
+  {
+    "id": "06",
+    "title": "Annual Report 2024-25 — Coal Distribution and Marketing",
+    "publisher": "Ministry of Coal",
+    "format": "PDF",
+    "source_url": "https://coal.gov.in/sites/default/files/2025-02/chap10AnnualReport2025en2.pdf",
+    "dataset_role": "Report chapter with structured tables and narrative."
+  },
+  {
+    "id": "07",
+    "title": "Annual Report 2024-25 — Safety in Coal Mines",
+    "publisher": "Ministry of Coal",
+    "format": "PDF",
+    "source_url": "https://coal.gov.in/sites/default/files/2025-02/chap14AnnualReport2025en2.pdf",
+    "dataset_role": "Safety/reporting domain; useful for document intelligence and reporting."
+  },
+  {
+    "id": "08",
+    "title": "Annual Report 2024-25 — Information Technology",
+    "publisher": "Ministry of Coal",
+    "format": "PDF",
+    "source_url": "https://coal.gov.in/sites/default/files/2025-02/chap20AnnualReport2025en2.pdf",
+    "dataset_role": "IT/reporting chapter; useful for mixed narrative and structured content."
+  },
+  {
+    "id": "09",
+    "title": "National Coal Inventory 2023",
+    "publisher": "CMPDI",
+    "format": "PDF",
+    "source_url": "https://www.cmpdi.co.in/sites/default/files/2023-11/National_Coal_Inventory_2023.pdf",
+    "dataset_role": "Geological/resource inventory material; domain-heavy tables and terminology."
+  },
+  {
+    "id": "10",
+    "title": "National Coal Inventory 2022",
+    "publisher": "CMPDI",
+    "format": "PDF",
+    "source_url": "https://www.cmpdi.co.in/sites/default/files/2022-12/National_Coal_Inventory_2022.pdf",
+    "dataset_role": "Historical geological/resource inventory; useful for cross-version comparison."
+  },
+  {
+    "id": "11",
+    "title": "CIL Promotion Orders — scanned signed pages",
+    "publisher": "Coal India Limited",
+    "format": "PDF",
+    "source_url": "https://d3u7ubx0okog7j.cloudfront.net/documents/Prmotion_Orders_no._B-70_to_B-83_E1_to_E2_E2_to_E3__E3_to_E4.pdf",
+    "dataset_role": "Real CIL document; search result explicitly identifies handwritten signature/date on the document."
+  },
+  {
+    "id": "12",
+    "title": "CIL PR Agency Contract — scanned executed agreement",
+    "publisher": "Coal India Limited",
+    "format": "PDF",
+    "source_url": "https://d3u7ubx0okog7j.cloudfront.net/documents/PR_AgencyContract.pdf",
+    "dataset_role": "Real CIL agreement; scanned pages contain handwritten signatures/dates and stamps."
+  }
+]

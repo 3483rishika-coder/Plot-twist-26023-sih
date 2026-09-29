@@ -1,0 +1,86 @@
+# EvidenceOS — production-shaped air-gapped deployment (PRD §13):
+# API + worker + PostgreSQL/pgvector + Redis + MinIO + Ollama local LLM.
+services:
+  db:
+    image: pgvector/pgvector:pg16
+    environment:
+      POSTGRES_USER: evidenceos
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-evidenceos}
+      POSTGRES_DB: evidenceos
+    volumes: ["pgdata:/var/lib/postgresql/data"]
+    healthcheck: { test: ["CMD-SHELL", "pg_isready -U evidenceos"], interval: 5s, retries: 20 }
+
+  redis:
+    image: redis:7-alpine
+    healthcheck: { test: ["CMD", "redis-cli", "ping"], interval: 5s, timeout: 3s, retries: 5 }
+
+  minio:
+    image: minio/minio:latest
+    command: server /data --console-address ":9001"
+    environment:
+      MINIO_ROOT_USER: ${MINIO_ROOT_USER:-evidenceos}
+      MINIO_ROOT_PASSWORD: ${MINIO_ROOT_PASSWORD:-evidenceos-secret}
+    ports: ["9000:9000", "9001:9001"]
+    volumes: ["miniodata:/data"]
+
+  ollama:
+    image: ollama/ollama:latest
+    container_name: evidenceos-ollama
+    ports: ["11434:11434"]
+    volumes: ["ollamadata:/root/.ollama"]
+    healthcheck: { test: ["CMD-SHELL", "ollama list || exit 0"], interval: 10s, timeout: 5s, retries: 5 }
+
+  api:
+    build: .
+    depends_on:
+      db: { condition: service_healthy }
+      redis: { condition: service_started }
+      minio: { condition: service_started }
+      ollama: { condition: service_started }
+    environment:
+      DATABASE_URL: postgresql+psycopg://evidenceos:${POSTGRES_PASSWORD:-evidenceos}@db:5432/evidenceos
+      EVIDENCEOS_DATA_DIR: /data
+      EVIDENCEOS_WORKER: "0"            # the worker container processes jobs
+      REDIS_URL: redis://redis:6379/0
+      MINIO_ENDPOINT: minio:9000
+      MINIO_ACCESS_KEY: ${MINIO_ROOT_USER:-evidenceos}
+      MINIO_SECRET_KEY: ${MINIO_ROOT_PASSWORD:-evidenceos-secret}
+      MINIO_BUCKET: evidenceos
+      LLM_PROVIDER: ${LLM_PROVIDER:-ollama}
+      LLM_BASE_URL: ${LLM_BASE_URL:-http://ollama:11434}
+      LLM_MODEL: ${LLM_MODEL:-llama3:8b}
+      LLM_API_KEY: ${LLM_API_KEY:-}
+      BHASHINI_ENABLED: ${BHASHINI_ENABLED:-1}
+      BHASHINI_API_KEY: ${BHASHINI_API_KEY:-}
+      BHASHINI_USER_ID: ${BHASHINI_USER_ID:-}
+      APISETU_CLIENT_ID: ${APISETU_CLIENT_ID:-}
+      APISETU_API_KEY: ${APISETU_API_KEY:-}
+      DIGILOCKER_CLIENT_ID: ${DIGILOCKER_CLIENT_ID:-}
+      DATAGOV_API_KEY: ${DATAGOV_API_KEY:-}
+    volumes: ["evidence:/data"]
+    ports: ["8000:8000"]
+
+  worker:
+    build: .
+    depends_on:
+      db: { condition: service_healthy }
+      redis: { condition: service_started }
+      minio: { condition: service_started }
+    environment:
+      DATABASE_URL: postgresql+psycopg://evidenceos:${POSTGRES_PASSWORD:-evidenceos}@db:5432/evidenceos
+      EVIDENCEOS_DATA_DIR: /data
+      REDIS_URL: redis://redis:6379/0
+      MINIO_ENDPOINT: minio:9000
+      MINIO_ACCESS_KEY: ${MINIO_ROOT_USER:-evidenceos}
+      MINIO_SECRET_KEY: ${MINIO_ROOT_PASSWORD:-evidenceos-secret}
+      MINIO_BUCKET: evidenceos
+      BHASHINI_ENABLED: ${BHASHINI_ENABLED:-1}
+    volumes: ["evidence:/data"]
+    command: ["python", "-m", "evidenceos.worker"]
+
+volumes:
+  pgdata: {}
+  miniodata: {}
+  evidence: {}
+  ollamadata: {}
+

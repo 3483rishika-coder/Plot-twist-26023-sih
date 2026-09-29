@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Koyla AI — Evidence-first reporting for CMPDI / Coal India</title>
+<link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="brand" onclick="location.hash='#/dashboard'">
+    <svg width="26" height="26" viewBox="0 0 26 26" aria-hidden="true"><rect x="2" y="2" width="22" height="22" rx="5" fill="#0f766e"/><path d="M7 13.5l4 4 8-9" stroke="#fff" stroke-width="2.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    <span>Koyla AI (कोयला AI)</span><small>PS 26023 · CMPDI / CIL</small>
+  </div>
+  <nav id="nav">
+    <a href="#/dashboard" data-route="dashboard">Dashboard</a>
+    <a href="#/documents" data-route="documents">Documents</a>
+    <a href="#/ask" data-route="ask">Ask</a>
+    <a href="#/conflicts" data-route="conflicts">Conflicts</a>
+    <a href="#/review" data-route="review">Review</a>
+    <a href="#/reports" data-route="reports">Reports</a>
+    <a href="#/topics" data-route="topics">Topics</a>
+    <a href="#/audit" data-route="audit">Audit</a>
+  </nav>
+  <div class="who">
+    <label>Role <select id="roleSelect" title="Switch demo role (RBAC + document ACL)"></select></label>
+    <span id="whoami" class="pill"></span>
+  </div>
+</header>
+<main id="app"><div class="loading">Loading…</div></main>
+<div id="toast" class="toast" hidden></div>
+<script src="/static/app.js"></script>
+</body>
+</html>

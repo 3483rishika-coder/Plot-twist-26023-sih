@@ -1,0 +1,13 @@
+id,title,publisher,format,source_url,dataset_role
+01,Coal Directory of India 2024-25,Ministry of Coal,PDF,https://coal.gov.in/sites/default/files/2024-03/28-11-2025a-stc.pdf,"Large statistical directory; multi-column tables, long historical series."
+02,Coal Directory of India 2023-24,Ministry of Coal,PDF,https://coal.gov.in/sites/default/files/2024-03/28-10-2024adir.pdf,Large statistical directory; useful for cross-year consistency checks.
+03,Coal Directory of India 2022-23,Ministry of Coal,PDF,https://coal.gov.in/sites/default/files/2024-03/07-03-2024cd-wn.pdf,Older statistical directory; useful for historical-document testing.
+04,Monthly Coal Statistics — March 2025,Ministry of Coal,PDF,https://coal.gov.in/sites/default/files/2025-04/msg-march25.pdf,Tables + charts + subsidiary/mining data; includes CIL mine-level production tables.
+05,Monthly Coal Statistics — May 2025,Ministry of Coal,PDF,https://coal.gov.in/sites/default/files/2025-06/msg-may25.pdf,Monthly statistics with tables/charts and operational metrics.
+06,Annual Report 2024-25 — Coal Distribution and Marketing,Ministry of Coal,PDF,https://coal.gov.in/sites/default/files/2025-02/chap10AnnualReport2025en2.pdf,Report chapter with structured tables and narrative.
+07,Annual Report 2024-25 — Safety in Coal Mines,Ministry of Coal,PDF,https://coal.gov.in/sites/default/files/2025-02/chap14AnnualReport2025en2.pdf,Safety/reporting domain; useful for document intelligence and reporting.
+08,Annual Report 2024-25 — Information Technology,Ministry of Coal,PDF,https://coal.gov.in/sites/default/files/2025-02/chap20AnnualReport2025en2.pdf,IT/reporting chapter; useful for mixed narrative and structured content.
+09,National Coal Inventory 2023,CMPDI,PDF,https://www.cmpdi.co.in/sites/default/files/2023-11/National_Coal_Inventory_2023.pdf,Geological/resource inventory material; domain-heavy tables and terminology.
+10,National Coal Inventory 2022,CMPDI,PDF,https://www.cmpdi.co.in/sites/default/files/2022-12/National_Coal_Inventory_2022.pdf,Historical geological/resource inventory; useful for cross-version comparison.
+11,CIL Promotion Orders — scanned signed pages,Coal India Limited,PDF,https://d3u7ubx0okog7j.cloudfront.net/documents/Prmotion_Orders_no._B-70_to_B-83_E1_to_E2_E2_to_E3__E3_to_E4.pdf,Real CIL document; search result explicitly identifies handwritten signature/date on the document.
+12,CIL PR Agency Contract — scanned executed agreement,Coal India Limited,PDF,https://d3u7ubx0okog7j.cloudfront.net/documents/PR_AgencyContract.pdf,Real CIL agreement; scanned pages contain handwritten signatures/dates and stamps.
